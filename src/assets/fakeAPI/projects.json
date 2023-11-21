@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "argentbank",
+      "skills": ["react", "html", "css"],
+      "liveDemo": "https:oc-argentbank.strikelab.fr",
+      "repoGithub": "https://github.com/Strikelab/oc-p11-argentbank",
+      "speech": "lorem ipsum blabla this project was wonderfull"
+    },
+    {
+      "id": 2,
+      "title": "argentbank",
+      "skills": ["react", "html", "css"],
+      "liveDemo": "https:oc-argentbank.strikelab.fr",
+      "repoGithub": "https://github.com/Strikelab/oc-p11-argentbank",
+      "speech": "lorem ipsum blabla this project was wonderfull"
+    }
+  ]
+}

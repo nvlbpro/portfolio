@@ -1,0 +1,48 @@
+.social {
+  right: 0;
+  top: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+  transform: translateY(-60%);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-right: -170px;
+  margin-top: 70px;
+  z-index: 6;
+}
+
+.social a {
+  display: block;
+  color: $font-color2;
+  font-size: 14px;
+  margin-top: 10px;
+  float: left;
+  margin-right: 15px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.social a.text {
+  margin-right: 0;
+}
+.social a i {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.social a:hover i {
+  color: #ea1538;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 425px) {
+  .social {
+    margin-right: -180px;
+  }
+}

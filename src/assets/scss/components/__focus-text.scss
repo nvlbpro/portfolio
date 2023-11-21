@@ -1,0 +1,22 @@
+// https://typedcss.com/
+.focus-text {
+  padding: 0 0 0 3px;
+  color: $font-color3;
+  &::before {
+    font-weight: inherit;
+  }
+  @include typed(
+    "computers networks and telecommunications.",
+    "web integration.",
+    "sites optimisations.",
+    (
+      type: 0.05,
+      delete: 0.02,
+      pause-deleted: 0.5,
+    ),
+    (
+      caret-width: 2px,
+      caret-space: 2px,
+    )
+  );
+}

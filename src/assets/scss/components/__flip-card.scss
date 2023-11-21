@@ -1,0 +1,49 @@
+.flipcard {
+  &__container {
+    padding: 5px;
+    margin-bottom: 30px;
+    width: 50vh;
+    height: 50vh;
+    border: 5px solid white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid white;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background: white;
+  }
+  &__title {
+    font-family: "montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  &__picture {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  &__footer {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 10%;
+    background: white;
+  }
+  &__back {
+    border: 5px solid white;
+    background-color: white;
+  }
+}

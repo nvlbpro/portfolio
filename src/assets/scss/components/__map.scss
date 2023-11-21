@@ -1,0 +1,30 @@
+.map {
+  padding-top: 70px;
+  width: 100%;
+  @extend %section-title;
+}
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+}
+.leaflet-popup-content-wrapper {
+  position: relative;
+  width: 194px;
+  height: 289px;
+  background: url(../../img/Charlie.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  .charlie {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+.leaflet-attribution-flag {
+  opacity: 0;
+  width: 0;
+}

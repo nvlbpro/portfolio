@@ -1,0 +1,21 @@
+.home {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+  // h2 {
+  //   padding: 20px 0;
+  //   font-family: "montserrat";
+  //   font: weight 700;
+  //   font-size: 4rem;
+  // }
+
+  .line {
+    float: left;
+    width: 72px;
+    background: #bfbfbf;
+    height: 1px;
+    margin: 20px 17px;
+  }
+}
