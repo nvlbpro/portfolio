@@ -17,4 +17,4 @@ Pendant les travaux, vous pouvez toujours me contacter via contact@strikelab.fr 
 
 Merci de votre patience et de votre intérêt pour mon travail !
 
-[insérer votre nom ici]
+Strikelab
