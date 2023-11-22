@@ -1,3 +1,9 @@
+[![My pretty portfolio ^_^ !!!](https://ftp.strikelab.fr/images/oc/portfolio_preview.png)](https://oc-portfolio.strikelab.fr/)
+
+## Live demo:
+
+[https://oc-argentbank.strikelab.fr](https://oc-portfolio.strikelab.fr/)
+
 # Portfolio en Travaux
 
 Bienvenue sur mon portfolio ! Actuellement, le site est en cours de construction et de mise à jour pour offrir une meilleure expérience. Pendant cette période, certaines fonctionnalités peuvent être limitées ou absentes.
