@@ -1,29 +1,31 @@
 import Flipcard from "./Flipcard";
-// import argentBankPicture from "../assets/img/argentbank.png";
-// import argentBankPicture from "../assets/img/argentbank.png"
+
 import { useEffect, useState } from "react";
-// import projectsList from "../assets/fakeAPI/projects.json";
+
 function Projects() {
-  // const PICTURE_PATH = "../assets/img/";
-  const [projets, setProjet] = useState(null);
+
+  const [projects, setProject] = useState(null);
+  
+  //mock API
+  const fetchData = async () => {
+    const data = await fetch("./projects.json");
+    const json = await data.json();
+    const projectsList = json.projects;
+    setProject(projectsList);
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch("./projects.json");
-      const json = await data.json();
-      const projectsList = json.projects;
-      setProjet(projectsList);
-    };
-    fetchData();
+    fetchData()
   }, []);
 
-  // const skills = ["HTML", "CSS", "REACT"];
+
   return (
     <section className="projects">
       <span className="ancres" id="projects"></span>
       <h2 className="projects__title">MY WORK</h2>
       <div className="projects__cards-container">
 
-        {projets?.map((project, key) => (
+        {projects?.map((project, key) => (
           <Flipcard
             key={key}
             title={project.title}
