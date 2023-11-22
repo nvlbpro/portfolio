@@ -2,7 +2,7 @@ import Tile from "./Tile"
 
 function Skills() {
 
-    const skills={"skills":["apache","blinka","debian","figma","gimp","gnu","jira","micropython","mongodb","mysql","node","php","react","redux","sass", "jest"]}
+    const skills={"skills":["apache","blinka","debian","figma","gimp","gnu","jira","micropython","raspberrypi","mongodb","mysql","node","php","react","redux","sass", "jest"]}
         
     
   return (

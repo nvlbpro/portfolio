@@ -15,11 +15,11 @@ function Home() {
         <Header />
         <About />
         <Skills />
-        <Lines />
         <Services />
         <Projects />
         <Map />
         <ScrollButton />
+        <Lines />
       </div>
     </>
   );
