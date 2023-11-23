@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 function ContactForm() {
-  // State for form fields and form message
+  // State for form fields, form message, and message class
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -8,6 +9,7 @@ function ContactForm() {
     message: "",
   });
   const [formMessage, setFormMessage] = useState("");
+  const [messageStatusClass, setMessageStatusClass] = useState(""); // New state for message class
   const [isSubmitting, setIsSubmitting] = useState(false); // New state for tracking submission status
 
   // Handle input changes
@@ -42,12 +44,18 @@ function ContactForm() {
 
       // Parse the response JSON
       const data = await response.json();
-      // console.log('PHP Response:', data);
 
-      // Update form message based on the response
+      // Update form message and message class based on the response
       setFormMessage(
         data.message ||
           "Oops! Something went wrong, and we couldn't send your message."
+      );
+      setMessageStatusClass(
+        data.status === "error"
+          ? "error"
+          : data.status === "success"
+          ? "success"
+          : ""
       );
     } catch (error) {
       // Log and display an error message
@@ -55,10 +63,24 @@ function ContactForm() {
       setFormMessage(
         "Oops! Something went wrong, and we couldn't send your message."
       );
+      setMessageStatusClass("error");
     } finally {
       setIsSubmitting(false); // Reset submission status
     }
   };
+
+  // Handle the automatic reset of messageClassName
+  useEffect(() => {
+    const resetMessageStatusClass = () => {
+      setMessageStatusClass("");
+    };
+
+    // Set a timeout to reset the messageClassName after 10 seconds
+    const timeoutId = setTimeout(resetMessageStatusClass, 10000);
+
+    // Clear the timeout when the component is unmounted or when messageClassName changes
+    return () => clearTimeout(timeoutId);
+  }, [messageStatusClass]);
 
   return (
     <section className="contact">
@@ -68,21 +90,21 @@ function ContactForm() {
       <div className="contact__container">
         <div className="contact__infos">
           <div className="contact__infos-item">
-            <i class="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-phone"></i>
             <div className="info-item__content">
               <h3>Call Us</h3>
               <p>+33 651 638 744</p>
             </div>
           </div>
           <div className="contact__infos-item">
-            <i class="fa-solid fa-building"></i>
+            <i className="fa-solid fa-building"></i>
             <div className="info-item__content">
               <h3>Visit Us</h3>
               <p>33 av. de Calais</p>
             </div>
           </div>
           <div className="contact__infos-item">
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
             <div className="info-item__content">
               <h3>Email Us</h3>
               <p>contact@strikelab.fr</p>
@@ -94,14 +116,7 @@ function ContactForm() {
           id="contact-form"
           onSubmit={handleSubmit}
         >
-          <div
-            className={`contact__form-message ${
-              formMessage ===
-              "Oops! Something went wrong, and we couldn't send your message."
-                ? "error"
-                : "success"
-            }`}
-          >
+          <div className={`contact__form-message ${messageStatusClass}`}>
             <div className="contact__form-message-content">{formMessage}</div>
           </div>
 

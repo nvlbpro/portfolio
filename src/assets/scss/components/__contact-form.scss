@@ -14,10 +14,13 @@
     padding: 10px 15px;
     border-radius: 3px;
     color: white;
+    visibility: hidden;
     &.success {
-      color: $success-color;
+      visibility: visible;
+      background-color: $success-color;
     }
     &.error {
+      visibility: visible;
       background-color: $error-color;
     }
   }
