@@ -3,11 +3,11 @@
 $origin = $_SERVER['HTTP_ORIGIN'];
 
 // List of allowed origins
-  // FIXME: Update this to your desired allowed domains.
+ // FIXME: Update this to your desired allowed domains.
 $allowedOrigins = [
-    'https://fake-origin.be',
-    'https://fake2-origin.uk',
-    'https://fake3-origin.fr',
+    'YOUR ALLOWED DOMAIN 1 HERE',
+    'YOUR ALLOWED DOMAIN 2 HERE',
+    'YOUR ALLOWED DOMAIN 3 HERE',
     // Add more origins as needed
 ];
 
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = "fake-mail@false.tld";
+    $recipient = "YOUR EMAIL ADDRESS HERE";
 
     // Set the email subject.
     $subject = "$subject";
@@ -57,17 +57,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Build the email headers.
     $email_headers = "From: $name <$email>";
 
-    // Send the email.
+    // Send the main email.
     if (mail($recipient, $subject, $email_content, $email_headers)) {
         // Set a 200 (okay) response code.
         http_response_code(200);
-        echo json_encode(["status" => "success", "message" => "Thank You! Your message has been sent."]);
+        echo json_encode([
+            "status" => "success",
+            "message" => "Thank You! Your message has been sent.\nYou will receive a confirmation mail.\nIf you didn't, please check your spam folder."
+        ]);
+
+        // Send confirmation email to the visitor
+        $confirmationSubject = "Confirmation - Your Message to Strikelab";
+        $confirmationMessage = "Dear $name,\n\nThank you for contacting us! Your message has been received and we will get back to you soon.\n\nBest regards,\nStrikelab Team";
+        $confirmationHeaders = "From: Strikelab <contact@strikelab.fr>";
+
+        mail($email, $confirmationSubject, $confirmationMessage, $confirmationHeaders);
     } else {
         // Set a 500 (internal server error) response code.
         http_response_code(500);
-        echo json_encode(["status" => "error", "message" => "Oops! Something went wrong, and we couldn't send your message."]);
+        echo json_encode([
+            "status" => "error",
+            "message" => "Oops! Something went wrong, and we couldn't send your message."
+        ]);
     }
-
 } else {
     // Not a POST request, set a 403 (forbidden) response code.
     http_response_code(403);

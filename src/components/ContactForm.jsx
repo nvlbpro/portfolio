@@ -61,7 +61,7 @@ function ContactForm() {
       {/* Form and form message */}
       <form className="contact-form form" id="contact-form" onSubmit={handleSubmit}>
         <div className={`form-message ${formMessage === "Oops! Something went wrong, and we couldn't send your message." ? 'error' : 'success'}`}>
-          {formMessage}
+        <div className="form-message-content">{formMessage}</div>
         </div>
         {/* Form controls */}
         <div className="controls">
