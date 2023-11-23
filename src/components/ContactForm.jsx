@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ContactForm() {
   // State for form fields and form message
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  const [formMessage, setFormMessage] = useState('');
+  const [formMessage, setFormMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false); // New state for tracking submission status
 
   // Handle input changes
@@ -21,7 +21,7 @@ function ContactForm() {
     e.preventDefault();
 
     // Clear form fields immediately
-    setForm({ name: '', email: '', subject: '', message: '' });
+    setForm({ name: "", email: "", subject: "", message: "" });
 
     // Prevent multiple submissions while the form is being processed
     if (isSubmitting) {
@@ -33,10 +33,10 @@ function ContactForm() {
 
       // Make a fetch request to the server
       const response = await fetch(process.env.REACT_APP_MAIL_API, {
-        method: 'POST',
-        mode: 'cors',
+        method: "POST",
+        mode: "cors",
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams(form).toString(),
       });
@@ -46,22 +46,40 @@ function ContactForm() {
       // console.log('PHP Response:', data);
 
       // Update form message based on the response
-      setFormMessage(data.message || "Oops! Something went wrong, and we couldn't send your message.");
+      setFormMessage(
+        data.message ||
+          "Oops! Something went wrong, and we couldn't send your message."
+      );
     } catch (error) {
       // Log and display an error message
-      console.error('Error sending message', error);
-      setFormMessage("Oops! Something went wrong, and we couldn't send your message.");
+      console.error("Error sending message", error);
+      setFormMessage(
+        "Oops! Something went wrong, and we couldn't send your message."
+      );
     } finally {
       setIsSubmitting(false); // Reset submission status
     }
   };
 
   return (
-    <section id="contact">
+    <section className="contact">
+      <h2 className="contact__title">CONTACT US</h2>
+      <span className="ancres" id="contact"></span>
       {/* Form and form message */}
-      <form className="contact-form form" id="contact-form" onSubmit={handleSubmit}>
-        <div className={`form-message ${formMessage === "Oops! Something went wrong, and we couldn't send your message." ? 'error' : 'success'}`}>
-        <div className="form-message-content">{formMessage}</div>
+      <form
+        className="contact-form form"
+        id="contact-form"
+        onSubmit={handleSubmit}
+      >
+        <div
+          className={`form-message ${
+            formMessage ===
+            "Oops! Something went wrong, and we couldn't send your message."
+              ? "error"
+              : "success"
+          }`}
+        >
+          <div className="form-message-content">{formMessage}</div>
         </div>
         {/* Form controls */}
         <div className="controls">
@@ -103,7 +121,12 @@ function ContactForm() {
             value={form.message}
           ></textarea>
           {/* Submit button */}
-          <button type="submit" className="button" data-text="Send Message" disabled={isSubmitting}>
+          <button
+            type="submit"
+            className="button"
+            data-text="Send Message"
+            disabled={isSubmitting}
+          >
             <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
           </button>
         </div>

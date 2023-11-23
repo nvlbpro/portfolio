@@ -1,42 +1,51 @@
 // contact-form.scss
-
-.form-message {
-  font-size: 16px;
-
-  &.success {
-    color: green;
+.contact {
+  @extend %section-title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  &__title {
+    margin-bottom: 70px;
   }
+  .form-message {
+    font-size: 16px;
 
-  &.error {
-    color: red;
+    &.success {
+      color: green;
+    }
+
+    &.error {
+      color: red;
+    }
   }
-}
-.form-message-content {
-  white-space: pre-line;
-}
-.contact-form {
-  max-width: 400px;
-  margin: 0 auto;
-
-  input,
-  textarea {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    box-sizing: border-box;
+  .form-message-content {
+    white-space: pre-line;
   }
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
 
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
 
-    &:hover {
-      background-color: #0056b3;
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
     }
   }
 }

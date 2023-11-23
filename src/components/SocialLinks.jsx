@@ -1,7 +1,9 @@
 function SocialLinks() {
   return (
     <div className="social">
-      <a href="#"className="text">Social Links</a>
+      <a href="#" className="text">
+        Social Links
+      </a>
       <div className="line"></div>
       <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
         <i className="fa fa-facebook"></i>{" "}
