@@ -85,7 +85,7 @@ function ContactForm() {
   return (
     <section className="contact">
       <span className="ancres" id="contact"></span>
-      <h2 className="contact__title">CONTACT US</h2>
+      <h2 className="contact__title">CONTACT</h2>
       {/* Form and form message */}
       <div className="contact__container">
         <div className="contact__infos">

@@ -1,11 +1,15 @@
 function SocialLinks() {
   return (
     <div className="social">
-      <a href="#" className="text">
+      <a href="https://oc-portfolio.strikelab.fr" className="text">
         Social Links
       </a>
       <div className="line"></div>
-      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.facebook.com/StrikeLabOff/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="fa fa-facebook"></i>{" "}
       </a>
       <a
@@ -15,7 +19,7 @@ function SocialLinks() {
       >
         <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>{" "}
       </a>
-      <a href="#">
+      <a href="https://discord.com/channels/@strikelab">
         <i className="fa-brands fa-discord" aria-hidden="true"></i>{" "}
       </a>
       {/* <a href="https://www.messenger.com/" target="_blank" rel="noreferrer">
