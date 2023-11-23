@@ -20,6 +20,10 @@
       font-size: 14px;
       line-height: 24px;
     }
+    a {
+      display: inline-block;
+      width: fit-content;
+    }
   }
   &__picture {
     width: 40vw;

@@ -4,48 +4,102 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
+  width: 80vw;
   padding-top: 70px;
-  &__title {
-    margin-bottom: 70px;
-  }
-  .form-message {
+
+  &__form-message {
+    min-height: 52px;
     font-size: 16px;
-
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
     &.success {
-      color: green;
+      color: $success-color;
     }
-
     &.error {
-      color: red;
+      background-color: $error-color;
     }
   }
-  .form-message-content {
+  &__form-message-content {
     white-space: pre-line;
   }
-  .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-
-    input,
-    textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      box-sizing: border-box;
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &__form {
+    width: 50%;
+    max-width: 500px;
+  }
+  &__infos {
+    margin-top: 77px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+  }
+  &__infos-item {
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+    width: 80%;
+    .info-item__content {
+      padding-top: 5px;
+    }
+    h3 {
+      margin-bottom: 10px;
     }
 
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+      border-radius: 5px;
+      font-size: 25px;
+      background-color: $background-color2;
+    }
+  }
 
-      &:hover {
-        background-color: #0056b3;
+  &__form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    #form_name {
+      margin-top: 25px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      outline: none;
+      font-size: 1rem;
+      font-family: "Josefin Sans", sans-serif;
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 15px 20px 15px;
+      border: 1px solid transparent;
+      border-bottom: 1px solid darken($background-color2, 10%);
+      color: darken($background-color2, 50%);
+      background: $background-color2;
+      font-weight: 600;
+      &:focus {
+        border: 1px solid darken($background-color2, 10%);
       }
+    }
+
+    ::placeholder {
+      color: darken($background-color2, 50%);
+    }
+    button {
+      @extend .button__about;
+      outline: none;
+      margin: auto;
     }
   }
 }

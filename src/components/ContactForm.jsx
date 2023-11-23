@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 function ContactForm() {
   // State for form fields and form message
   const [form, setForm] = useState({
@@ -63,74 +62,99 @@ function ContactForm() {
 
   return (
     <section className="contact">
-      <h2 className="contact__title">CONTACT US</h2>
       <span className="ancres" id="contact"></span>
+      <h2 className="contact__title">CONTACT US</h2>
       {/* Form and form message */}
-      <form
-        className="contact-form form"
-        id="contact-form"
-        onSubmit={handleSubmit}
-      >
-        <div
-          className={`form-message ${
-            formMessage ===
-            "Oops! Something went wrong, and we couldn't send your message."
-              ? "error"
-              : "success"
-          }`}
+      <div className="contact__container">
+        <div className="contact__infos">
+          <div className="contact__infos-item">
+            <i class="fa-solid fa-phone"></i>
+            <div className="info-item__content">
+              <h3>Call Us</h3>
+              <p>+33 651 638 744</p>
+            </div>
+          </div>
+          <div className="contact__infos-item">
+            <i class="fa-solid fa-building"></i>
+            <div className="info-item__content">
+              <h3>Visit Us</h3>
+              <p>33 av. de Calais</p>
+            </div>
+          </div>
+          <div className="contact__infos-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div className="info-item__content">
+              <h3>Email Us</h3>
+              <p>contact@strikelab.fr</p>
+            </div>
+          </div>
+        </div>
+        <form
+          className="contact__form"
+          id="contact-form"
+          onSubmit={handleSubmit}
         >
-          <div className="form-message-content">{formMessage}</div>
-        </div>
-        {/* Form controls */}
-        <div className="controls">
-          {/* Individual form fields */}
-          <input
-            id="form_name"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            onChange={handleChange}
-            value={form.name}
-          />
-          <input
-            id="form_email"
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            onChange={handleChange}
-            value={form.email}
-          />
-          <input
-            id="form_subject"
-            type="text"
-            name="subject"
-            placeholder="Your Subject"
-            required
-            onChange={handleChange}
-            value={form.subject}
-          />
-          <textarea
-            id="form_message"
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-            onChange={handleChange}
-            value={form.message}
-          ></textarea>
-          {/* Submit button */}
-          <button
-            type="submit"
-            className="button"
-            data-text="Send Message"
-            disabled={isSubmitting}
+          <div
+            className={`contact__form-message ${
+              formMessage ===
+              "Oops! Something went wrong, and we couldn't send your message."
+                ? "error"
+                : "success"
+            }`}
           >
-            <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
-          </button>
-        </div>
-      </form>
+            <div className="contact__form-message-content">{formMessage}</div>
+          </div>
+
+          <div className="contact__form-fields">
+            {/* Individual form fields */}
+            <input
+              id="form_name"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              onChange={handleChange}
+              value={form.name}
+            />
+            <input
+              id="form_email"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              onChange={handleChange}
+              value={form.email}
+            />
+            <input
+              id="form_subject"
+              type="text"
+              name="subject"
+              placeholder="Your Subject"
+              required
+              onChange={handleChange}
+              value={form.subject}
+            />
+            <textarea
+              id="form_message"
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+              onChange={handleChange}
+              value={form.message}
+            ></textarea>
+            {/* Submit button */}
+            <button
+              type="submit"
+              className="button"
+              data-text="Send Message"
+              disabled={isSubmitting}
+            >
+              <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
   );
 }
