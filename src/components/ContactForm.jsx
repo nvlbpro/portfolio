@@ -1,5 +1,3 @@
-// ContactForm.jsx
-
 import React, { useState } from 'react';
 
 function ContactForm() {
@@ -11,6 +9,7 @@ function ContactForm() {
     message: '',
   });
   const [formMessage, setFormMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false); // New state for tracking submission status
 
   // Handle input changes
   const handleChange = (e) => {
@@ -21,7 +20,17 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Clear form fields immediately
+    setForm({ name: '', email: '', subject: '', message: '' });
+
+    // Prevent multiple submissions while the form is being processed
+    if (isSubmitting) {
+      return;
+    }
+
     try {
+      setIsSubmitting(true); // Set submission status to true
+
       // Make a fetch request to the server
       const response = await fetch(process.env.REACT_APP_MAIL_API, {
         method: 'POST',
@@ -34,18 +43,16 @@ function ContactForm() {
 
       // Parse the response JSON
       const data = await response.json();
-      console.log('PHP Response:', data);
+      // console.log('PHP Response:', data);
 
       // Update form message based on the response
-      if (response.ok) {
-        setFormMessage(data.message);
-      } else {
-        setFormMessage(data.message);
-      }
+      setFormMessage(data.message || "Oops! Something went wrong, and we couldn't send your message.");
     } catch (error) {
       // Log and display an error message
       console.error('Error sending message', error);
       setFormMessage("Oops! Something went wrong, and we couldn't send your message.");
+    } finally {
+      setIsSubmitting(false); // Reset submission status
     }
   };
 
@@ -96,8 +103,8 @@ function ContactForm() {
             value={form.message}
           ></textarea>
           {/* Submit button */}
-          <button type="submit" className="button" data-text="Send Message">
-            <span>Send Message</span>
+          <button type="submit" className="button" data-text="Send Message" disabled={isSubmitting}>
+            <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
           </button>
         </div>
       </form>
