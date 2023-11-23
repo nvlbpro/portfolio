@@ -1,8 +1,26 @@
 <?php
-// mail.php
-// Enable Cross-Origin Resource Sharing (CORS) for a specific origin
-// FIXME: Update this with your domain address.
-header("Access-Control-Allow-Origin: https://fakehost.com/mail.php"); 
+// Get the origin from the request
+$origin = $_SERVER['HTTP_ORIGIN'];
+
+// List of allowed origins
+  // FIXME: Update this to your desired allowed domains.
+$allowedOrigins = [
+    'https://fake-origin.be',
+    'https://fake2-origin.uk',
+    'https://fake3-origin.fr',
+    // Add more origins as needed
+];
+
+// Check if the request origin is in the allowed list
+if (!in_array($origin, $allowedOrigins)) {
+    // If not in the allowed list, return a 403 (forbidden) response
+    http_response_code(403);
+    echo json_encode(["status" => "error", "message" => "Forbidden. Origin not allowed."]);
+    exit;
+}
+
+// Allow CORS for the allowed origin
+header("Access-Control-Allow-Origin: $origin");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
@@ -25,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = "fakemail@test.tld";
+    $recipient = "fake-mail@false.tld";
 
     // Set the email subject.
     $subject = "$subject";
@@ -55,12 +73,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(403);
     echo json_encode(["status" => "error", "message" => "There was a problem with your submission, please try again."]);
 }
-
-// Instructions on how to use this mail.php script:
-// echo "\n";
-// echo "Usage Instructions:\n";
-// echo "1. Set the 'Access-Control-Allow-Origin' header to the origin of your web application.\n";
-// echo "2. Customize the recipient email address by updating the \$recipient variable.\n";
-// echo "3. Adjust the email subject and content based on your requirements.\n";
-// echo "4. Ensure your web server has mail functionality enabled for the 'mail()' function to work.\n";
-// echo "5. Integrate this mail.php script with your web application's contact form.\n";
+?>
