@@ -6,7 +6,9 @@ import Projects from "../components/Projects";
 import ScrollButton from "../components/ScrollButton";
 import Services from "../components/Services";
 import Skills from "../components/Skills";
+import ContactForm from "../components/ContactForm"
 import "../utils/ScrollFunction";
+
 
 function Home() {
   return (
@@ -17,6 +19,7 @@ function Home() {
         <Skills />
         <Services />
         <Projects />
+        <ContactForm />
         <Map />
         <ScrollButton />
         <Lines />

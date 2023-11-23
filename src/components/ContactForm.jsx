@@ -1,84 +1,108 @@
-import React from 'react'
+// ContactForm.jsx
+
+import React, { useState } from 'react';
 
 function ContactForm() {
+  // State for form fields and form message
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [formMessage, setFormMessage] = useState('');
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Make a fetch request to the server
+      const response = await fetch(process.env.REACT_APP_MAIL_API, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(form).toString(),
+      });
+
+      // Parse the response JSON
+      const data = await response.json();
+      console.log('PHP Response:', data);
+
+      // Update form message based on the response
+      if (response.ok) {
+        setFormMessage(data.message);
+      } else {
+        setFormMessage(data.message);
+      }
+    } catch (error) {
+      // Log and display an error message
+      console.error('Error sending message', error);
+      setFormMessage("Oops! Something went wrong, and we couldn't send your message.");
+    }
+  };
+
   return (
-    // <!-- Contact Section Start -->
-        <section id="contact" class="contact-area section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 section-title">
-                        <h2>Contact Us</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-5">
-                        <div class="row contact-information">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="contact-details">
-                                    <i class="fa fa-phone"></i>
-                                    <h6>Call us</h6>
-                                    <p>+105 773 321 7771</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="contact-details">
-                                    <i class="fa fa-home"></i>
-                                    <h6>Visit us</h6>
-                                    <p>4 South Birchwood Ave.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="contact-details">
-                                    <i class="fa fa-envelope"></i>
-                                    <h6>Email us</h6>
-                                    <p>demo@example.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-7">
-                        <p class="form-message"></p>
-                        <br/>
-                        <form class="contact-form form" id="contact-form" action="mail.php" method="POST">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_name" type="text" name="name" placeholder="Type Your Name"
-                                                required="required"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_email" type="email" name="email"
-                                                placeholder="Type Your Email" required="required"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_subject" type="text" name="subject"
-                                                placeholder="Type Your Subject" required="required"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea id="form_message" name="message" placeholder="Type Your Message"
-                                                rows="4" required="required"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="button" data-text="Send Message"><span>Send
-                                                Message</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-      // <!-- Contact Section End -->
-  )
+    <section id="contact">
+      {/* Form and form message */}
+      <form className="contact-form form" id="contact-form" onSubmit={handleSubmit}>
+        <div className={`form-message ${formMessage === "Oops! Something went wrong, and we couldn't send your message." ? 'error' : 'success'}`}>
+          {formMessage}
+        </div>
+        {/* Form controls */}
+        <div className="controls">
+          {/* Individual form fields */}
+          <input
+            id="form_name"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            onChange={handleChange}
+            value={form.name}
+          />
+          <input
+            id="form_email"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            onChange={handleChange}
+            value={form.email}
+          />
+          <input
+            id="form_subject"
+            type="text"
+            name="subject"
+            placeholder="Your Subject"
+            required
+            onChange={handleChange}
+            value={form.subject}
+          />
+          <textarea
+            id="form_message"
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            required
+            onChange={handleChange}
+            value={form.message}
+          ></textarea>
+          {/* Submit button */}
+          <button type="submit" className="button" data-text="Send Message">
+            <span>Send Message</span>
+          </button>
+        </div>
+      </form>
+    </section>
+  );
 }
 
-export default ContactForm
+export default ContactForm;
