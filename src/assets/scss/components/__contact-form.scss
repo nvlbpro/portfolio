@@ -93,6 +93,9 @@
       font-weight: 600;
       &:focus {
         border: 1px solid darken($background-color2, 10%);
+        &::placeholder {
+          color: transparent;
+        }
       }
     }
 
