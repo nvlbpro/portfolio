@@ -37,6 +37,7 @@ function Projects() {
             cover={project.cover}
             logo={project.logo}
             skills={project.skills}
+            competences={project.competences}
             alt={project.picture}
             speech={project.speech}
             liveDemo={project.liveDemo}

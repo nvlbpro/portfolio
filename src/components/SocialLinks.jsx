@@ -26,7 +26,7 @@ function SocialLinks() {
         <i className="fa-brands fa-facebook-messenger" aria-hidden="true"></i>{" "}
       </a> */}
       <a href="https://github.com/Strikelab/" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-github" aria-hidden="true"></i>{" "}
+        <i className="fa-brands fa-github" aria-hidden="true"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/nicolas-vanlerberghe"

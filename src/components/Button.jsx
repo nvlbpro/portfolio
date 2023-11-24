@@ -11,7 +11,7 @@ function Button(props) {
       className={props.className}
       disabled={props.disabled}
     >
-      {props.buttonText}
+      {props.children || props.buttonText}
     </button>
   );
 }
