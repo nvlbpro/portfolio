@@ -4,8 +4,8 @@ import Button from "./Button";
 // import argentBankPicture from '../assets/img'
 function Flipcard(props) {
   // Dynamically load the feature image from the assets folder based on the provided image filename
-  const picture = require(`../assets/img/${props.image}`);
-  const skills = props.skills;
+  const picture = require(`../assets/img/projects/${props.image}`);
+  // const skills = props.skills;
   return (
     <ReactFlipCard
       flipTrigger="onClick"
@@ -15,13 +15,13 @@ function Flipcard(props) {
       backCss="flipcard__back"
       frontComponent={
         <>
-          <div className="flipcard__header">
+          {/* <div className="flipcard__header">
             <h3 className="flipcard__title">{props.title}</h3>
-          </div>
+          </div> */}
           <div className="flipcard__content">
             <img className="flipcard__picture" src={picture} alt={props.img} />
           </div>
-          <div className="flipcard__footer">
+          {/* <div className="flipcard__footer">
             {skills?.map((skill, key) => (
               <Button
                 className="button__skill"
@@ -30,7 +30,7 @@ function Flipcard(props) {
                 key={key}
               />
             ))}
-          </div>
+          </div> */}
         </>
       }
       backComponent={
