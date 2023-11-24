@@ -16,8 +16,14 @@ function Menu() {
       <HashLink smooth to="#projects">
         <li className="menu__item">Project</li>
       </HashLink>
-      <HashLink smooth to="#review">
-        <li className="menu__item">Review</li>
+      <HashLink className="inactive" smooth to="#review">
+        <li
+          className="menu__item inactive"
+          content="🚧Under Construction🚧"
+          title=""
+        >
+          Review
+        </li>
       </HashLink>
       <HashLink smooth to="#contact">
         <li className="menu__item">Contact</li>

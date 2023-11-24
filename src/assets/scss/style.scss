@@ -6,8 +6,8 @@
 @import "./utils/_typed";
 // base
 @import "./base/_normalize";
-@import "./base/_global"; // layout
-
+@import "./base/_global";
+// layout
 // components
 @import "./components/_logo";
 @import "./components/_loader";
@@ -26,7 +26,8 @@
 @import "./components/_map";
 @import "./components/_skills";
 @import "./components/_services";
-@import "./components/_contact-form"; // pages
+@import "./components/_contact-form";
+// pages
 @import "./pages/_home";
 //themes
 @import "./themes/_lines";
