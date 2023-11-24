@@ -7,7 +7,7 @@ function Button(props) {
   // - buttonText: Text content of the button
   return (
     <button
-      onClick={props.handleClick}
+      onClick={props.onClick}
       className={props.className}
       disabled={props.disabled}
     >
