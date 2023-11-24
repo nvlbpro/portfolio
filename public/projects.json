@@ -3,7 +3,8 @@
     {
       "id": 1,
       "title": "argentbank",
-      "picture": "argentbank.png",
+      "cover": "argentbank.png",
+      "logo": "argentbank-logo.png",
       "skills": ["react", "html", "css"],
       "liveDemo": "https://oc-argentbank.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p11-argentbank",
@@ -12,7 +13,8 @@
     {
       "id": 2,
       "title": "724 events",
-      "picture": "724events.png",
+      "cover": "724events.png",
+      "logo": "724events-logo.png",
       "skills": ["react", "html", "css", "jest"],
       "liveDemo": "https://oc-724events.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p10-724events",
@@ -21,7 +23,8 @@
     {
       "id": 3,
       "title": "kasa",
-      "picture": "kasa.png",
+      "cover": "kasa.png",
+      "logo": "kasa-logo.png",
       "skills": ["react", "html", "css"],
       "liveDemo": "https://oc-kasa.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p8-kasa",
@@ -30,7 +33,8 @@
     {
       "id": 4,
       "title": "nina carducci",
-      "picture": "ninacarducci.png",
+      "cover": "ninacarducci.png",
+      "logo": "ninacarducci-logo.png",
       "skills": ["react", "html", "css"],
       "liveDemo": "https://strikelab.github.io/oc-p9-ninacarducci/",
       "repoGithub": "https://github.com/Strikelab/oc-p9-ninacarducci",
@@ -39,7 +43,8 @@
     {
       "id": 5,
       "title": "sophie bluel",
-      "picture": "sophiebluel.png",
+      "cover": "sophiebluel.png",
+      "logo": "sophiebluel-logo.png",
       "skills": ["node", "javascript", "html", "css"],
       "liveDemo": "https://sophie-bluel.strikelab.fr/index.html",
       "repoGithub": "https://github.com/Strikelab/oc-p6-portfolio-architecte-sophie-bluel",
@@ -48,7 +53,8 @@
     {
       "id": 6,
       "title": "print-it",
-      "picture": "print-it.png",
+      "cover": "print-it.png",
+      "logo": "print-it-logo.png",
       "skills": ["javascript", "html", "css"],
       "liveDemo": "https://oc-print-it.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p5-print-it",
@@ -57,7 +63,8 @@
     {
       "id": 7,
       "title": "ohmyfood",
-      "picture": "ohmyfood.png",
+      "cover": "ohmyfood.png",
+      "logo": "ohmyfood-logo.png",
       "skills": ["html", "css", "scss"],
       "liveDemo": "https://oc-ohmyfood.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p4-ohmyfood",
@@ -66,7 +73,8 @@
     {
       "id": 8,
       "title": "booki",
-      "picture": "booki.png",
+      "cover": "booki.png",
+      "logo": "booki-logo.png",
       "skills": ["html", "css"],
       "liveDemo": "https://oc-booki.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p3-booki",

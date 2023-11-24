@@ -34,7 +34,8 @@ function Projects() {
           <Flipcard
             key={key}
             title={project.title}
-            image={project.picture}
+            cover={project.cover}
+            logo={project.logo}
             skills={project.skills}
             alt={project.picture}
             speech={project.speech}

@@ -4,7 +4,8 @@ import Button from "./Button";
 // import argentBankPicture from '../assets/img'
 function Flipcard(props) {
   // Dynamically load the feature image from the assets folder based on the provided image filename
-  const picture = require(`../assets/img/projects/${props.image}`);
+  const cover = require(`../assets/img/projects/${props.cover}`);
+  const logo = require(`../assets/img/projects/${props.logo}`);
   // const skills = props.skills;
   return (
     <ReactFlipCard
@@ -19,7 +20,8 @@ function Flipcard(props) {
             <h3 className="flipcard__title">{props.title}</h3>
           </div> */}
           <div className="flipcard__content">
-            <img className="flipcard__picture" src={picture} alt={props.img} />
+            <img className="flipcard__picture" src={cover} alt={props.cover} />
+            <img className="flipcard__logo" src={logo} alt={props.logo} />
           </div>
           {/* <div className="flipcard__footer">
             {skills?.map((skill, key) => (
@@ -35,6 +37,7 @@ function Flipcard(props) {
       }
       backComponent={
         <>
+          <h3>{props.title}</h3>
           <p>{props.speech}</p>
           <a href={props.repoGithub} target="_blank" rel="noreferrer">
             <Button className="button__github" buttonText="REPO GITHUB" />
