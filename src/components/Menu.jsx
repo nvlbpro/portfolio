@@ -1,37 +1,32 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-function Menu({ isOpen, setIsMenuOpen }) {
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
+function Menu() {
   return (
     <ul className="menu">
-      <Link to="/" onClick={closeMenu}>
-        <li className="menu__item bm-white">Home</li>
+      <Link to="/">
+        <li className="menu__item">Home</li>
       </Link>
-      <HashLink smooth to="#about" onClick={closeMenu}>
-        <li className="menu__item bm-white">About</li>
+      <HashLink to="#about">
+        <li className="menu__item">About</li>
       </HashLink>
-      <HashLink smooth to="#service" onClick={closeMenu}>
-        <li className="menu__item bm-white">Service</li>
+      <HashLink to="#service">
+        <li className="menu__item">Service</li>
       </HashLink>
-      <HashLink smooth to="#projects" onClick={closeMenu}>
-        <li className="menu__item bm-white">Project</li>
+      <HashLink to="#projects">
+        <li className="menu__item">Project</li>
       </HashLink>
-      <HashLink className="inactive" smooth to="#review" onClick={closeMenu}>
+      <HashLink className="inactive" smooth to="#review">
         <li
-          className="menu__item inactive bm-white"
+          className="menu__item inactive"
           content="🚧Under Construction🚧"
           title=""
         >
           Review
         </li>
       </HashLink>
-      <HashLink smooth to="#contact" onClick={closeMenu}>
-        <li className="menu__item bm-white">Contact</li>
+      <HashLink to="#contact">
+        <li className="menu__item">Contact</li>
       </HashLink>
     </ul>
   );
