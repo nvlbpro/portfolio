@@ -15,7 +15,7 @@ function About() {
           </h3>
           <h3>- It&apos;s a pleasure for me to introduce about myself.</h3>
           <p>
-            Hello I&apos;m{" "}
+            I&apos;m{" "}
             <span className="color-text">
               Nicolas Vanlerberghe from France.
             </span>
