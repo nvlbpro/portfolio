@@ -48,7 +48,7 @@ function About() {
             @strikelab
           </p>
           <Link to={myCV} target="_blank" download>
-            <Button className="button__about" buttonText="Resume My CV" />
+            <Button className="button__about" buttonText="Download CV" />
           </Link>
         </div>
       </div>

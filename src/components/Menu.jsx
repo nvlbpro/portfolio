@@ -12,7 +12,7 @@ function Menu({ isOpen, setIsMenuOpen }) {
       <Link to="/" onClick={closeMenu}>
         <li className="menu__item">Home</li>
       </Link>
-      <HashLink smooth to="#about" onClick={closeMenu}>
+      <HashLink to="#about" onClick={closeMenu}>
         <li className="menu__item">About</li>
       </HashLink>
       <HashLink to="#service" onClick={closeMenu}>
