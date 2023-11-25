@@ -7,13 +7,13 @@
       "logo": "argentbank-logo.png",
       "skills": ["node", "react", "redux"],
       "competences": [
-        "Afficher les données du back end sur l'interface via des appels API",
-        "Configurer des routes API pour la communication client / serveur",
-        "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+        "Display backend data on the interface through API calls",
+        "Configure API routes for client/server communication",
+        "Implement data management with Redux to ensure front-end functionality"
       ],
       "liveDemo": "https://oc-argentbank.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p11-argentbank",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 2,
@@ -22,14 +22,14 @@
       "logo": "724events-logo.png",
       "skills": ["node", "react", "jest"],
       "competences": [
-        "Débugger un site web grâce aux Chrome DevTools",
-        "Rédiger un cahier de recette pour tester un site",
-        "Test unitaires",
-        "Tests fonctionnels"
+        "Debug a website using Chrome DevTools",
+        "Write a recipe book for testing a site",
+        "Unit testing",
+        "Functional testing"
       ],
       "liveDemo": "https://oc-724events.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p10-724events",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 3,
@@ -38,15 +38,14 @@
       "logo": "kasa-logo.png",
       "skills": ["react", "sass"],
       "competences": [
-        "Mettre en œuvre des animations CSS",
-        "Développer une interface web avec Sass",
-        "Configurer la navigation entre les pages de l'application avec React Router",
-        "Développer des éléments de l'interface d'un site web grâce à des composants React",
-        ""
+        "Implement CSS animations",
+        "Develop a web interface with Sass",
+        "Configure navigation between application pages with React Router",
+        "Develop elements of a website's interface using React components"
       ],
       "liveDemo": "https://oc-kasa.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p8-kasa",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 4,
@@ -55,14 +54,14 @@
       "logo": "ninacarducci-logo.png",
       "skills": ["SEO"],
       "competences": [
-        "optimiser les performances d'un site web",
-        "référencement local Schema.org.",
-        "accéssibilité",
-        "rich snippets"
+        "Optimize website performance",
+        "Local Schema.org SEO",
+        "Accessibility",
+        "Rich snippets"
       ],
       "liveDemo": "https://strikelab.github.io/oc-p9-ninacarducci/",
       "repoGithub": "https://github.com/Strikelab/oc-p9-ninacarducci",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 5,
@@ -71,13 +70,13 @@
       "logo": "sophiebluel-logo.png",
       "skills": ["API", "node", "javascript", "html", "css"],
       "competences": [
-        "Gérer les événements utilisateurs avec JavaScript",
-        "Manipuler les éléments du DOM avec JavaScript",
-        "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+        "Manage user events with JavaScript",
+        "Manipulate DOM elements with JavaScript",
+        "Retrieve user data in JavaScript via forms"
       ],
       "liveDemo": "https://sophie-bluel.strikelab.fr/index.html",
       "repoGithub": "https://github.com/Strikelab/oc-p6-portfolio-architecte-sophie-bluel",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 6,
@@ -85,14 +84,10 @@
       "cover": "print-it.png",
       "logo": "print-it-logo.png",
       "skills": ["javascript"],
-      "competences": [
-        "Programmer en utilisant les fondamentaux de JavaScript",
-        "",
-        ""
-      ],
+      "competences": ["Program using the fundamentals of JavaScript"],
       "liveDemo": "https://oc-print-it.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p5-print-it",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 7,
@@ -101,13 +96,13 @@
       "logo": "ohmyfood-logo.png",
       "skills": ["html", "css", "sass", "git"],
       "competences": [
-        "Intégrer une maquette en mobile-first",
-        "Mettre en œuvre des animations CSS",
-        "Versionner son projet avec Git et Github"
+        "Integrate a mobile-first mockup",
+        "Implement CSS animations",
+        "Version the project with Git and Github"
       ],
       "liveDemo": "https://oc-ohmyfood.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p4-ohmyfood",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     },
     {
       "id": 8,
@@ -116,13 +111,13 @@
       "logo": "booki-logo.png",
       "skills": ["html", "css"],
       "competences": [
-        "Implémenter une interface responsive avec HTML et CSS",
-        "Installer un environnement de développement front-end",
-        "Intégrer du contenu conformément à une maquette avec HTML et CSS"
+        "Implement a responsive interface with HTML and CSS",
+        "Set up a front-end development environment",
+        "Integrate content according to a mockup with HTML and CSS"
       ],
       "liveDemo": "https://oc-booki.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p3-booki",
-      "speech": "lorem ipsum blabla this project was wonderfull"
+      "speech": "lorem ipsum blabla this project was wonderful"
     }
   ]
 }
