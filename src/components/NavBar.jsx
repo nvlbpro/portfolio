@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 function NavBar() {
   return (
-    <div id="navbar" className="navbar">
+    <div id="navbar" className="navbar custom-navbar">
       <Logo />
       <Menu />
     </div>

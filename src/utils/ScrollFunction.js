@@ -4,7 +4,7 @@ window.onscroll = () => {
 };
 
 function scrollFunction() {
-  const menuItems = document.querySelectorAll(".menu__item");
+  const menuItems = document.querySelectorAll(".custom-navbar .menu__item");
   // const burgerBars = document.querySelectorAll("span.bm-burger-bars");
   // console.log(burgerBars);
   const navBar = document.getElementById("navbar");
