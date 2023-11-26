@@ -19,7 +19,7 @@ function SocialLinks() {
       >
         <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>{" "}
       </a>
-      <a href="https://discord.com/channels/@strikelab">
+      <a href="https://discordapp.com/users/1082943847966982205">
         <i className="fa-brands fa-discord" aria-hidden="true"></i>{" "}
       </a>
       {/* <a href="https://www.messenger.com/" target="_blank" rel="noreferrer">
