@@ -4,7 +4,7 @@ function Services() {
   return (
     <section className="services">
       <span className="ancres" id="service"></span>
-      <h2 className="services__title">MY SERVICES</h2>
+      <h2 className="services__title">SERVICES</h2>
       <div className="services__content">
         <div className="service__item">
           <div className="service__item__container">
@@ -54,7 +54,7 @@ function Services() {
             <div className="service__item__icon">
               <i className="fa-solid fa-graduation-cap" aria-hidden="true"></i>
             </div>
-            <h3 className="service__item__title">Formation</h3>
+            <h3 className="service__item__title">Training</h3>
             <p className="service__item__description">
               Empower your team with our tailored training programs. From
               hands-on workshops in Micropython and Raspberry Pi to

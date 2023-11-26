@@ -100,7 +100,11 @@ function ContactForm() {
             <i className="fa-solid fa-building"></i>
             <div className="info-item__content">
               <h3>Visit Us</h3>
-              <p>33 av. de Calais</p>
+              <p>
+                33 av. de Calais
+                <br />
+                Grand-Fort-Philippe
+              </p>
             </div>
           </div>
           <div className="contact__infos-item">

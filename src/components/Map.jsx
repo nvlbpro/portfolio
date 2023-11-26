@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function Map() {
   const position = [51.000766999999996, 2.1050410161073874]; // [latitude, longitude]
-  const zoomLevel = 50;
+  const zoomLevel = 12;
   return (
     <section className="map">
       <span className="ancres" id="map"></span>
