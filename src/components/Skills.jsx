@@ -4,7 +4,7 @@ function Skills() {
   const skills = {
     skills: [
       "apache",
-      "blinka",
+      "circuitpython",
       "debian",
       "figma",
       "gimp",
