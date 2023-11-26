@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__content">
-        <h1>STRIKELAB</h1>
+        <h2>STRIKELAB</h2>
         <p>I&apos;m a front-end developer with a passion for learning.</p>
         <p>
           I help your business and individuals by developing websites. I build
