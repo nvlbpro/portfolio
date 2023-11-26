@@ -10,20 +10,48 @@
   &__container {
     width: 80vw;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center; /* Center the tiles horizontally */
+    align-items: center; /* Center the tiles vertically */
   }
+
   &__tile {
+    position: relative;
     width: 100px;
     height: 100px;
     background-color: $background-color2;
     border-radius: 5px;
+    &:hover > .skills__picture {
+      cursor: pointer;
+      opacity: 50%;
+    }
+    &:hover > .skills__name {
+      cursor: pointer;
+      opacity: 1;
+    }
   }
+
   &__picture {
     max-width: 100%;
     height: auto;
     object-fit: fill;
+    transition: all ease-in-out 0.4s;
+  }
+
+  &__name {
+    font-size: 11px;
+    opacity: 0;
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    background: $background-color2;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.4s;
   }
 }
