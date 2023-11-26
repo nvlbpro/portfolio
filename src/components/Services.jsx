@@ -44,8 +44,8 @@ function Services() {
             <p className="service__item__description">
               Building secure, efficient, and scalable network infrastructures.
               Whether establishing a new network or enhancing an existing one,
-              our expertise in Apache, Debian, and networking technologies
-              ensures reliable connectivity and performance.
+              our expertise in Apache, Debian, and networking technologies like
+              CISCO ensures reliable connectivity and performance.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ function Services() {
             <h3 className="service__item__title">Debug</h3>
             <p className="service__item__description">
               Swiftly resolve issues with our expert debugging. Utilizing tools
-              like Jira, we analyze code, troubleshoot errors, optimize
+              like Jest, we analyze code, troubleshoot errors, optimize
               performance. Our goal is to ensure your software operates
               seamlessly, delivering an enhanced user experience.
             </p>
