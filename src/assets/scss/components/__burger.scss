@@ -20,13 +20,17 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 50px;
+  width: 50px;
+  &:hover .bm-cross {
+    background-color: $background-color2;
+  }
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $background-color3;
+  transition: all 0.3s ease-in-out;
 }
 
 /*
@@ -40,7 +44,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #333;
+  // background: #222 -webkit-radial-gradient(10% 0%, ellipse farthest-corner, #444
+  //       50%, #222 100%);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -57,12 +63,32 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 0.8em;
   //styling
   .menu {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 0;
     color: red;
     width: 100%;
+    a {
+      display: block;
+      width: 100%;
+      &:hover li {
+        color: $background-color3;
+        border-bottom: 1px solid $background-color3;
+      }
+    }
+    li {
+      display: block;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    &__item[title]:hover:after {
+      bottom: 5px; /* Adjust the distance from the bottom */
+      left: 50%; /* Center the tooltip horizontally */
+      transform: translateX(-35%); /**/
+    }
   }
 }
 

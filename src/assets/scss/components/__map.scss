@@ -28,3 +28,7 @@
   opacity: 0;
   width: 0;
 }
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 500;
+}
