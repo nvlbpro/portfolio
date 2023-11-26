@@ -16,10 +16,10 @@ function Menu({ isOpen, setIsMenuOpen }) {
         <li className="menu__item">About</li>
       </HashLink>
       <HashLink to="#service" onClick={closeMenu}>
-        <li className="menu__item">Service</li>
+        <li className="menu__item">Services</li>
       </HashLink>
       <HashLink to="#projects" onClick={closeMenu}>
-        <li className="menu__item">Project</li>
+        <li className="menu__item">Projects</li>
       </HashLink>
       <HashLink className="inactive" to="#review" onClick={closeMenu}>
         <li
