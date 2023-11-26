@@ -85,9 +85,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
       transition: all 0.3s ease-in-out;
     }
     &__item[title]:hover:after {
-      bottom: 5px; /* Adjust the distance from the bottom */
+      bottom: 0; /* Adjust the distance from the bottom */
       left: 50%; /* Center the tooltip horizontally */
       transform: translateX(-35%); /**/
+      padding-bottom: 0;
     }
   }
 }
