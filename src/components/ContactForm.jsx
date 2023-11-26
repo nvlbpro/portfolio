@@ -92,14 +92,14 @@ function ContactForm() {
           <div className="contact__infos-item">
             <i className="fa-solid fa-phone"></i>
             <div className="info-item__content">
-              <h3>Call Us</h3>
+              <h3>Call Me</h3>
               <p>+33 651 638 744</p>
             </div>
           </div>
           <div className="contact__infos-item">
             <i className="fa-solid fa-building"></i>
             <div className="info-item__content">
-              <h3>Visit Us</h3>
+              <h3>Visit Me</h3>
               <p>
                 33 av. de Calais
                 <br />
@@ -110,7 +110,7 @@ function ContactForm() {
           <div className="contact__infos-item">
             <i className="fa-solid fa-envelope"></i>
             <div className="info-item__content">
-              <h3>Email Us</h3>
+              <h3>Email Me</h3>
               <p>contact@strikelab.fr</p>
             </div>
           </div>
