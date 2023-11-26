@@ -7,7 +7,19 @@ function Flipcard(props) {
   const cover = require(`../assets/img/projects/${props.cover}`);
   const logo = require(`../assets/img/projects/${props.logo}`);
   const logoOC = require(`../assets/img/logo/logo-oc.png`);
-  const skills = props.skills;
+  // Load skills from the '../assets/img/logo' folder
+  const skillsLogos = props.skills?.map((skill, key) => {
+    const skillLogosPath = require(`../assets/img/logo/${skill}.png`);
+    return (
+      <img
+        key={key}
+        src={skillLogosPath}
+        alt={skill}
+        className="flipcard__skill"
+      />
+    );
+  });
+
   const competences = props.competences;
   return (
     <ReactFlipCard
@@ -47,16 +59,9 @@ function Flipcard(props) {
               </li>
             ))}
           </ul>
-          <div className="flipcard__footer">
-            {skills?.map((skill, key) => (
-              <img
-                key={key}
-                src={`./logo/${skill}.png`}
-                alt=""
-                className="flipcard__skill"
-              />
-            ))}
-          </div>
+
+          <div className="flipcard__footer">{skillsLogos}</div>
+
           <div className="flipcard__links-container">
             <a href={props.repoGithub} target="_blank" rel="noreferrer">
               <Button className="button__github" buttonText="REPO GITHUB">
