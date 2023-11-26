@@ -1,15 +1,14 @@
 /* eslint-disable react/prop-types */
 import ReactFlipCard from "reactjs-flip-card";
 import Button from "./Button";
-// import argentBankPicture from '../assets/img'
 function Flipcard(props) {
   // Dynamically load the feature image from the assets folder based on the provided image filename
   const cover = require(`../assets/img/projects/${props.cover}`);
   const logo = require(`../assets/img/projects/${props.logo}`);
-  const logoOC = require(`../assets/img/logo/logo-oc.png`);
+  const logoOC = require(`../assets/img/logo/logo-oc.webp`);
   // Load skills from the '../assets/img/logo' folder
   const skillsLogos = props.skills?.map((skill, key) => {
-    const skillLogosPath = require(`../assets/img/logo/${skill}.png`);
+    const skillLogosPath = require(`../assets/img/logo/${skill}.webp`);
     return (
       <img
         key={key}

@@ -19,10 +19,7 @@ function ScrollButton() {
     <>
       {showButton && (
         <div className={`scrollToTop`}>
-          <Button
-            className=" button__scroll fixed bottom-5 right-7 z-50 cursor-pointer p-4"
-            onClick={handleScrollToTop}
-          />
+          <Button className=" button__scroll" onClick={handleScrollToTop} />
         </div>
       )}
     </>

@@ -62,7 +62,7 @@ button,
     z-index: 1000;
     width: 50px;
     height: 60px;
-    background: url(../../img/to-the-moon2.png);
+    background: url(../../img/to-the-moon2.webp);
     opacity: 0.4;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,7 +77,7 @@ button,
     }
     &::after {
       content: "";
-      background: url(../../img/to-the-moon4.png);
+      background: url(../../img/to-the-moon4.webp);
       background-repeat: no-repeat;
       background-size: cover;
       width: inherit;

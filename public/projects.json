@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "argentbank",
-      "cover": "argentbank.png",
-      "logo": "argentbank-logo.png",
+      "cover": "argentbank.webp",
+      "logo": "argentbank-logo.webp",
       "skills": ["node", "react", "redux"],
       "competences": [
         "Display backend data on the interface through API calls",
@@ -18,8 +18,8 @@
     {
       "id": 2,
       "title": "724 events",
-      "cover": "724events.png",
-      "logo": "724events-logo.png",
+      "cover": "724events.webp",
+      "logo": "724events-logo.webp",
       "skills": ["node", "react", "jest"],
       "competences": [
         "Debug a website using Chrome DevTools",
@@ -34,8 +34,8 @@
     {
       "id": 3,
       "title": "kasa",
-      "cover": "kasa.png",
-      "logo": "kasa-logo.png",
+      "cover": "kasa.webp",
+      "logo": "kasa-logo.webp",
       "skills": ["react", "sass"],
       "competences": [
         "Implement CSS animations",
@@ -50,8 +50,8 @@
     {
       "id": 4,
       "title": "nina carducci",
-      "cover": "ninacarducci.png",
-      "logo": "ninacarducci-logo.png",
+      "cover": "ninacarducci.webp",
+      "logo": "ninacarducci-logo.webp",
       "skills": ["SEO"],
       "competences": [
         "Optimize website performance",
@@ -66,8 +66,8 @@
     {
       "id": 5,
       "title": "sophie bluel",
-      "cover": "sophiebluel.png",
-      "logo": "sophiebluel-logo.png",
+      "cover": "sophiebluel.webp",
+      "logo": "sophiebluel-logo.webp",
       "skills": ["API", "node", "javascript", "html", "css"],
       "competences": [
         "Manage user events with JavaScript",
@@ -81,8 +81,8 @@
     {
       "id": 6,
       "title": "print-it",
-      "cover": "print-it.png",
-      "logo": "print-it-logo.png",
+      "cover": "print-it.webp",
+      "logo": "print-it-logo.webp",
       "skills": ["javascript"],
       "competences": ["Program using the fundamentals of JavaScript"],
       "liveDemo": "https://oc-print-it.strikelab.fr/",
@@ -92,8 +92,8 @@
     {
       "id": 7,
       "title": "ohmyfood",
-      "cover": "ohmyfood.png",
-      "logo": "ohmyfood-logo.png",
+      "cover": "ohmyfood.webp",
+      "logo": "ohmyfood-logo.webp",
       "skills": ["html", "css", "sass", "git"],
       "competences": [
         "Integrate a mobile-first mockup",
@@ -107,8 +107,8 @@
     {
       "id": 8,
       "title": "booki",
-      "cover": "booki.png",
-      "logo": "booki-logo.png",
+      "cover": "booki.webp",
+      "logo": "booki-logo.webp",
       "skills": ["html", "css"],
       "competences": [
         "Implement a responsive interface with HTML and CSS",
