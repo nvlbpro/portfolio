@@ -1,13 +1,15 @@
 <?php
+// Set the content type header to specify UTF-8 encoding
+header('Content-Type: text/html; charset=UTF-8');
 // Get the origin from the request
 $origin = $_SERVER['HTTP_ORIGIN'];
 
 // List of allowed origins
- // FIXME: Update this to your desired allowed domains.
+// FIXME: adapt domains to your allowed domains.  
 $allowedOrigins = [
-    'YOUR ALLOWED DOMAIN 1 HERE',
-    'YOUR ALLOWED DOMAIN 2 HERE',
-    'YOUR ALLOWED DOMAIN 3 HERE',
+    'https://authorized-domain1.fr',
+    'https://authorized-domain2.fr',
+    'https://authorized-domain2.fr'
     // Add more origins as needed
 ];
 
@@ -43,7 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = "YOUR EMAIL ADDRESS HERE";
+    // FIXME: adapt to your email address 
+    $recipient = "mail@fake.fr";
 
     // Set the email subject.
     $subject = "$subject";
@@ -63,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         http_response_code(200);
         echo json_encode([
             "status" => "success",
-            "message" => "Thank You! Your message has been sent.\nYou will receive a confirmation mail.\nIf you didn't, please check your spam folder."
+            "message" => "Thank You! Your message has been sent.\nYou will receive a confirmation mail.\n"
         ]);
 
         // Send confirmation email to the visitor
