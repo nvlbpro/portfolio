@@ -45,6 +45,7 @@
     width: 50%;
   }
   &__infos-item {
+    color: inherit;
     display: flex;
     font-size: 16px;
     font-weight: 800;
@@ -70,7 +71,9 @@
       background-color: $background-color2;
     }
   }
-
+  &__infos-item:nth-child(3):hover {
+    color: $font-color3;
+  }
   &__form-fields {
     display: flex;
     flex-direction: column;
