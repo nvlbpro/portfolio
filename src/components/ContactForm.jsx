@@ -89,13 +89,13 @@ function ContactForm() {
       {/* Form and form message */}
       <div className="contact__container">
         <div className="contact__infos">
-          <div className="contact__infos-item">
+          <a className="contact__infos-item" href="tel:+33651638740">
             <i className="fa-solid fa-phone"></i>
             <div className="info-item__content">
               <h3>Call Me</h3>
-              <p>+33 651 638 744</p>
+              <p>+33 651 638 740</p>
             </div>
-          </div>
+          </a>
           <div className="contact__infos-item">
             <i className="fa-solid fa-building"></i>
             <div className="info-item__content">

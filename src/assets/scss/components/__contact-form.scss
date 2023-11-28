@@ -71,7 +71,8 @@
       background-color: $background-color2;
     }
   }
-  &__infos-item:nth-child(3):hover {
+  &__infos-item:nth-child(3):hover,
+  &__infos-item:nth-child(1):hover {
     color: $font-color3;
   }
   &__form-fields {
