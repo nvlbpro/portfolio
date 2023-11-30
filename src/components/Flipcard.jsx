@@ -46,8 +46,10 @@ function Flipcard(props) {
         <>
           <img className="flipcard__back-cover" src={cover} alt={props.cover} />
           <div className="flipcard__header">
-            <img className="logo-oc" src={logoOC} alt="logo openclassrooms" />
-            <p>PARCOURS INTEGRATEUR WEB</p>
+            {props.logoOC && (
+              <img className="logo-oc" src={logoOC} alt="logo openclassrooms" />
+            )}
+            <p>{props.headingText}</p>
           </div>
           <h3>{props.title}</h3>
 

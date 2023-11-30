@@ -36,6 +36,8 @@ function Projects() {
             title={project.title}
             cover={project.cover}
             logo={project.logo}
+            logoOC={project.logoOC}
+            headingText={project.headingText}
             skills={project.skills}
             competences={project.competences}
             alt={project.picture}

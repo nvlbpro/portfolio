@@ -1,10 +1,27 @@
 {
   "projects": [
     {
+      "id": 9,
+      "title": "gpt-3",
+      "cover": "gpt3.webp",
+      "logo": "gpt3-logo.webp",
+      "headingText": "Javascript Mastery",
+      "skills": ["react", "sass", "figma"],
+      "competences": [
+        "Create a responsive website",
+        "Modern UI/UX design",
+        "Integrate figma desktop-first mockup"
+      ],
+      "liveDemo": "https://jm-gpt3.strikelab.fr",
+      "repoGithub": "https://github.com/Strikelab/gpt3-modern-ui-ux-design",
+      "logoOC": false
+    },
+    {
       "id": 1,
       "title": "argentbank",
       "cover": "argentbank.webp",
       "logo": "argentbank-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["node", "react", "redux"],
       "competences": [
         "Display backend data on the interface through API calls",
@@ -13,13 +30,15 @@
       ],
       "liveDemo": "https://oc-argentbank.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p11-argentbank",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 2,
       "title": "724 events",
       "cover": "724events.webp",
       "logo": "724events-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["node", "react", "jest"],
       "competences": [
         "Debug a website using Chrome DevTools",
@@ -29,13 +48,15 @@
       ],
       "liveDemo": "https://oc-724events.strikelab.fr",
       "repoGithub": "https://github.com/Strikelab/oc-p10-724events",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 3,
       "title": "kasa",
       "cover": "kasa.webp",
       "logo": "kasa-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["react", "sass"],
       "competences": [
         "Implement CSS animations",
@@ -45,13 +66,15 @@
       ],
       "liveDemo": "https://oc-kasa.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p8-kasa",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 4,
       "title": "nina carducci",
       "cover": "ninacarducci.webp",
       "logo": "ninacarducci-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["SEO"],
       "competences": [
         "Optimize website performance",
@@ -61,13 +84,15 @@
       ],
       "liveDemo": "https://strikelab.github.io/oc-p9-ninacarducci/",
       "repoGithub": "https://github.com/Strikelab/oc-p9-ninacarducci",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 5,
       "title": "sophie bluel",
       "cover": "sophiebluel.webp",
       "logo": "sophiebluel-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["API", "node", "javascript", "html", "css"],
       "competences": [
         "Manage user events with JavaScript",
@@ -76,24 +101,28 @@
       ],
       "liveDemo": "https://sophie-bluel.strikelab.fr/index.html",
       "repoGithub": "https://github.com/Strikelab/oc-p6-portfolio-architecte-sophie-bluel",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 6,
       "title": "print-it",
       "cover": "print-it.webp",
       "logo": "print-it-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["javascript"],
       "competences": ["Program using the fundamentals of JavaScript"],
       "liveDemo": "https://oc-print-it.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p5-print-it",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 7,
       "title": "ohmyfood",
       "cover": "ohmyfood.webp",
       "logo": "ohmyfood-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["html", "css", "sass", "git"],
       "competences": [
         "Integrate a mobile-first mockup",
@@ -102,13 +131,15 @@
       ],
       "liveDemo": "https://oc-ohmyfood.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p4-ohmyfood",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     },
     {
       "id": 8,
       "title": "booki",
       "cover": "booki.webp",
       "logo": "booki-logo.webp",
+      "headingText": "openclassrooms",
       "skills": ["html", "css"],
       "competences": [
         "Implement a responsive interface with HTML and CSS",
@@ -117,7 +148,8 @@
       ],
       "liveDemo": "https://oc-booki.strikelab.fr/",
       "repoGithub": "https://github.com/Strikelab/oc-p3-booki",
-      "speech": "lorem ipsum blabla this project was wonderful"
+      "speech": "lorem ipsum blabla this project was wonderful",
+      "logoOC": true
     }
   ]
 }
