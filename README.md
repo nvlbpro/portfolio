@@ -1,4 +1,4 @@
-[![My pretty portfolio ^_^ !!!](https://ftp.strikelab.fr/images/oc/portfolio_preview.png)](https://oc-portfolio.strikelab.fr/)
+[![My pretty portfolio ^_^ !!!](https://share.nvlb.fr/images/oc/portfolio_preview.png)](https://oc-portfolio.strikelab.fr/)
 
 ## Live demo:
 
