@@ -1,12 +1,12 @@
 [![My pretty portfolio ^_^ !!!](https://share.nvlb.fr/images/oc/portfolio_preview.png)](https://oc-portfolio.strikelab.fr/)
 
-## Live demo:
+## Lien:
 
-[https://oc-portfolio.strikelab.fr](https://oc-portfolio.strikelab.fr/)
+[https://portfolio.nvlb.fr](https://portfolio.nvlb.fr/)
 
-# Portfolio en Travaux
+# Portfolio
 
-Bienvenue sur mon portfolio ! Actuellement, le site est en cours de construction et de mise à jour pour offrir une meilleure expérience. Pendant cette période, certaines fonctionnalités peuvent être limitées ou absentes.
+Bienvenue sur mon portfolio !
 
 ## 🚧 Travaux en Cours
 
@@ -15,12 +15,10 @@ Bienvenue sur mon portfolio ! Actuellement, le site est en cours de construction
 
 ## 📅 Date de Fin Prévue
 
-Nous prévoyons achever la rénovation d'ici le 26/11/2023 . Merci de votre compréhension pendant cette période de transition.
+En constante evolution au fil des projets
 
 ## 💡 Comment me Contacter
 
-Pendant les travaux, vous pouvez toujours me contacter via contact@strikelab.fr pour toute opportunité, question ou collaboration.
+Pendant les travaux, vous pouvez toujours me contacter via contact@nvlb.fr pour toute opportunité, question ou collaboration.
 
-Merci de votre patience et de votre intérêt pour mon travail !
-
-Strikelab
+NVLB
