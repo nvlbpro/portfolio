@@ -1,8 +1,10 @@
+import { ReactComponent as LogoSVG } from "../assets/img/logo/logo-nvlb.svg";
 function Loader() {
-  const logo = "</> STRIKELAB";
+  // const logo = "</> STRIKELAB";
   return (
     <div className="loader">
-      <h1 className="loader__title">{logo}</h1>
+      <LogoSVG className="header__content__logo" />
+      <p className="loader__title">NVLB</p>
       <div className="loader__element"></div>
     </div>
   );

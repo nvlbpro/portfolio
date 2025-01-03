@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="header__content">
         <LogoSVG width="200px" className="header__content__logo" />
-        <h2>NVLB</h2>
+        <h2 className="header__content__title">NVLB</h2>
         <p>I&apos;m a front-end developer with a passion for learning.</p>
         <p>
           I help your business and individuals by developing websites. I build

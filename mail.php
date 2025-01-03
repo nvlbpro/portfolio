@@ -7,7 +7,7 @@ $origin = $_SERVER['HTTP_ORIGIN'];
 // List of allowed origins
 // FIXME: adapt domains to your allowed domains.  
 $allowedOrigins = [
-    'https://authorized-domain1.fr',
+    'https://nvlb.fr',
     'https://authorized-domain2.fr',
     'https://authorized-domain2.fr'
     // Add more origins as needed
