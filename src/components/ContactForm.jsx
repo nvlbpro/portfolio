@@ -109,7 +109,7 @@ function ContactForm() {
           </div>
           <a
             className="contact__infos-item"
-            href="mailto:contact@strikelab.fr?subject=Demande%20de%20contact%20depuis%20le%20portfolio&body=Bonjour%20,%0A%0AJe%20suis%20intéressé(e)%20par%20votre%20travail%20et%20j'aimerais%20discuter%20de%20la%20possibilité%20de%20collaborer.%20Voici%20quelques%20informations%20supplémentaires%20:%0A%0ANom%20:%20%0APrénom%20:%20%0AEntreprise%20(si%20applicable)%20:%20%0ATéléphone%20:%20%0A%0AMerci%20!"
+            href="mailto:contact@nvlb.fr?subject=Demande%20de%20contact%20depuis%20le%20portfolio&body=Bonjour%20,%0A%0AJe%20suis%20intéressé(e)%20par%20votre%20travail%20et%20j'aimerais%20discuter%20de%20la%20possibilité%20de%20collaborer.%20Voici%20quelques%20informations%20supplémentaires%20:%0A%0ANom%20:%20%0APrénom%20:%20%0AEntreprise%20(si%20applicable)%20:%20%0ATéléphone%20:%20%0A%0AMerci%20!"
           >
             <i className="fa-solid fa-envelope"></i>
             <div className="info-item__content">
