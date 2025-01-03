@@ -1,11 +1,13 @@
 import FocusText from "./FocusText";
 import SocialLinks from "./SocialLinks";
+import { ReactComponent as LogoSVG } from "../assets/img/logo/logo-nvlb.svg";
 
 function Header() {
   return (
     <header className="header">
       <div className="header__content">
-        <h2>STRIKELAB</h2>
+        <LogoSVG width="200px" className="header__content__logo" />
+        <h2>NVLB</h2>
         <p>I&apos;m a front-end developer with a passion for learning.</p>
         <p>
           I help your business and individuals by developing websites. I build

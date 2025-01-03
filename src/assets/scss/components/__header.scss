@@ -16,14 +16,18 @@
   z-index: 1;
   padding-bottom: 0px;
   &__content {
+    // display: flex;
+    // flex-direction: column;
     height: 230px;
     padding: 5px;
     // background: rgba(255, 255, 255, 0.1);
     width: 80vw;
     h2 {
+      width: 100px;
+      margin: auto;
       font-family: "montserrat", sans-serif;
       font-size: 35px;
-      font-weight: 900;
+      font-weight: 600;
       margin-bottom: 20px;
     }
     p {
@@ -31,6 +35,11 @@
       font-weight: 800;
       line-height: 1.2rem;
       padding-bottom: 5px;
+    }
+    &__logo {
+      @extend .logo__symbol;
+      width: 105px;
+      height: 105px;
     }
   }
 }

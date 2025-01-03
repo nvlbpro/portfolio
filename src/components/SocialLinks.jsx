@@ -6,7 +6,7 @@ function SocialLinks() {
       </a>
       <div className="line"></div>
       <a
-        href="https://www.facebook.com/StrikeLabOff/"
+        href="https://www.facebook.com/nvlb.fr"
         target="_blank"
         rel="noreferrer"
       >

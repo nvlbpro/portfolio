@@ -114,7 +114,7 @@ function ContactForm() {
             <i className="fa-solid fa-envelope"></i>
             <div className="info-item__content">
               <h3>Email Me</h3>
-              contact@strikelab.fr
+              contact@nvlb.fr
             </div>
           </a>
         </div>

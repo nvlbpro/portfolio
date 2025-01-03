@@ -41,11 +41,11 @@ function About() {
 
           <p>
             <span className="bold-text">E-mail:</span>
-            contact@strikelab.fr
+            contact@nvlb.fr
           </p>
           <p>
             <span className="bold-text">Messenger:</span>
-            @strikelab
+            @nvlb
           </p>
           <Link to={myCV} target="_blank" download>
             <Button className="button__about" buttonText="Download CV" />
