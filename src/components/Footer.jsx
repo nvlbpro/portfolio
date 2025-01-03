@@ -1,9 +1,11 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <p>Copyright © 2023</p>
+      <p>Copyright © {currentYear}</p>
       <p>
-        Designed by <span>STRIKELAB</span>
+        Designed by <span>NVLB</span>
       </p>
     </footer>
   );
