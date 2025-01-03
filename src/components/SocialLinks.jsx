@@ -12,20 +12,16 @@ function SocialLinks() {
       >
         <i className="fa fa-facebook"></i>{" "}
       </a>
-      <a
-        href="https://twitter.com/strikelab_off"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="https://x.com/nvlb_off" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>{" "}
       </a>
-      <a href="https://discordapp.com/users/1082943847966982205">
+      <a href="https://discordapp.com/users/nvlb_off">
         <i className="fa-brands fa-discord" aria-hidden="true"></i>{" "}
       </a>
       {/* <a href="https://www.messenger.com/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-facebook-messenger" aria-hidden="true"></i>{" "}
       </a> */}
-      <a href="https://github.com/Strikelab/" target="_blank" rel="noreferrer">
+      <a href="https://github.com/n-vlb/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github" aria-hidden="true"></i>
       </a>
       <a
