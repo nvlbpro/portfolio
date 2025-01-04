@@ -129,8 +129,8 @@
         "Implement CSS animations",
         "Version the project with Git and Github"
       ],
-      "liveDemo": "https://oc-ohmyfood.strikelab.fr/",
-      "repoGithub": "https://github.com/Strikelab/oc-p4-ohmyfood",
+      "liveDemo": "https://ohmyfood.nvlb.fr/",
+      "repoGithub": "https://github.com/n-vlb/oc-p4-ohmyfood",
       "speech": "lorem ipsum blabla this project was wonderful",
       "logoOC": true
     },

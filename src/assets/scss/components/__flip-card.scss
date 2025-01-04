@@ -13,6 +13,9 @@
       display: block;
       padding-bottom: 100%;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
   //front of the card
   &__front-cover {
