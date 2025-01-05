@@ -6,13 +6,13 @@ function SocialLinks() {
       </a>
       <div className="line"></div>
       <a
-        href="https://www.facebook.com/nvlb.pro"
+        href="https://www.facebook.com/nvlbpro"
         target="_blank"
         rel="noreferrer"
       >
         <i className="fa fa-facebook"></i>{" "}
       </a>
-      <a href="https://x.com/nvlb_pro" target="_blank" rel="noreferrer">
+      <a href="https://x.com/nvlbpro" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>{" "}
       </a>
       <a href="https://discord.com/users/1287108189115912192">
@@ -21,11 +21,11 @@ function SocialLinks() {
       {/* <a href="https://www.messenger.com/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-facebook-messenger" aria-hidden="true"></i>{" "}
       </a> */}
-      <a href="https://github.com/nvlb-pro/" target="_blank" rel="noreferrer">
+      <a href="https://github.com/nvlbpro/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github" aria-hidden="true"></i>
       </a>
       <a
-        href="https://www.linkedin.com/in/nicolas-vanlerberghe"
+        href="https://www.linkedin.com/in/nvlbpro"
         target="_blank"
         rel="noreferrer"
       >
