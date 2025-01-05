@@ -146,8 +146,8 @@
         "Set up a front-end development environment",
         "Integrate content according to a mockup with HTML and CSS"
       ],
-      "liveDemo": "https://oc-booki.strikelab.fr/",
-      "repoGithub": "https://github.com/Strikelab/oc-p3-booki",
+      "liveDemo": "https://booki.nvlb.fr/",
+      "repoGithub": "https://github.com/n-vlb/oc-p3-booki",
       "speech": "lorem ipsum blabla this project was wonderful",
       "logoOC": true
     }

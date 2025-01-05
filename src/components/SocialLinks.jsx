@@ -1,27 +1,27 @@
 function SocialLinks() {
   return (
     <div className="social">
-      <a href="https://oc-portfolio.strikelab.fr" className="text">
+      <a href="https://nvlb.fr" className="text">
         Social Links
       </a>
       <div className="line"></div>
       <a
-        href="https://www.facebook.com/nvlb.fr"
+        href="https://www.facebook.com/nvlb.pro"
         target="_blank"
         rel="noreferrer"
       >
         <i className="fa fa-facebook"></i>{" "}
       </a>
-      <a href="https://x.com/nvlb_off" target="_blank" rel="noreferrer">
+      <a href="https://x.com/nvlb_pro" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>{" "}
       </a>
-      <a href="https://discordapp.com/users/nvlb_off">
+      <a href="https://discord.com/users/1287108189115912192">
         <i className="fa-brands fa-discord" aria-hidden="true"></i>{" "}
       </a>
       {/* <a href="https://www.messenger.com/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-facebook-messenger" aria-hidden="true"></i>{" "}
       </a> */}
-      <a href="https://github.com/n-vlb/" target="_blank" rel="noreferrer">
+      <a href="https://github.com/nvlb-pro/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github" aria-hidden="true"></i>
       </a>
       <a
