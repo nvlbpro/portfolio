@@ -45,7 +45,7 @@ function About() {
           </p>
           <p>
             <span className="bold-text">Messenger:</span>
-            @nvlb
+            @nvlb.pro
           </p>
           <Link to={myCV} target="_blank" download>
             <Button className="button__about" buttonText="Download CV" />
